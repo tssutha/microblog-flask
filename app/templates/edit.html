@@ -1,0 +1,30 @@
+<!-- extends base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="well">
+	<h1> Edit Your Profile </h1>
+	<form class="form-horizontal" action="" method="post" name= "edit">
+		{{ form.hidden_tag() }}
+		<table>
+			<tr>
+				<td> <h4> <span class="label label-primary"> Your nickname: </span></h4></td>
+				<td> 
+					{{ form.nickname(size=24) }}
+					{% for error in form.errors.nickname %}
+					<br><span style="color:red;">[{{ error }}] </span>
+					{% endfor %}
+				 </td>
+			</tr>
+			<tr>
+				<td><h4><span class="label label-primary"> About yourself:</span></h4></td>
+				<td> {{ form.about_me(cols=32, rows=4) }}</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td> <input class="btn-primary" type="submit" value="Save changes"></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+{% endblock %}

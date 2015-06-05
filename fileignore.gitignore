@@ -1,0 +1,5 @@
+venv
+*.pyc
+flask
+app_tut
+tmp
