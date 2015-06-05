@@ -28,12 +28,12 @@ MAIL_SERVER = 'smtp.gmail.com'
 MAIL_PORT = 465 
 MAIL_USE_TLS = False
 MAIL_USE_SSL = True
-MAIL_USERNAME = 'tssutha@gmail.com'
-MAIL_PASSWORD = 'chev.2102'
+MAIL_USERNAME = 'test@gmail.com'
+MAIL_PASSWORD = 'testpassword'
 
 #administrator list
 #ADMINS = ['you@example.com']
-ADMINS = ['tssutha@gmail.com']
+ADMINS = ['testadmin@gmail.com']
 
 #pagination
 POSTS_PER_PAGE = 3
